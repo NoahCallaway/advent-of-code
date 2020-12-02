@@ -7,7 +7,7 @@ with open(file_path) as f:
     passwords = f.read().splitlines()
     f.close()
 
-#task 1
+#Task 1
 def part1():
     valid = 0
     regex = r"(\d*)-(\d*) ([a-z]): (\D*)"
@@ -22,7 +22,7 @@ def part1():
 
     return valid
 
-#task2
+#Task2
 def part2():
     valid = 0
     regex = r"(\d*)-(\d*) ([a-z]): (\D*)"
@@ -33,7 +33,7 @@ def part2():
         
         #First and second not the same
         if word[int(first)-1] != word[int(second)-1]:
-            #first or second is the character
+            #First or second is the character
             if word[int(first)-1] == char or word[int(second)-1] == char:
                 valid += 1
 
