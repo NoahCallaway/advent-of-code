@@ -4,6 +4,7 @@ prog = open(file_path).read().splitlines()
 
 
 def apply_mask(mask: str, binary: list) -> list:
+
     for i, bit in enumerate(mask):
         if bit == '0':
             continue
